@@ -1,0 +1,10 @@
+{
+  "name": "@tech-cart/store-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@tech-cart/store"
+    ]
+  }
+}

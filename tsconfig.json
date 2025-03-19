@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/api"
+    },
+    {
+      "path": "./apps/store"
+    },
+    {
+      "path": "./apps/store-e2e"
     }
   ]
 }
