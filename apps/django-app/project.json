@@ -1,0 +1,21 @@
+{
+  "root": "apps/django-app",
+  "sourceRoot": "apps/django-app",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "python3 manage.py runserver",
+        "cwd": "apps/django-app"
+      }
+    },
+    "migrate": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "python3 manage.py migrate",
+        "cwd": "apps/django-app"
+      }
+    }
+  }
+}
