@@ -21,6 +21,7 @@ export default function ProductCard({
 }: IProductCard) {
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault()
+    // eslint-disable-next-line no-alert
     alert('add to cart')
   }
   return (

@@ -68,7 +68,7 @@ const mockProducts: Product[] = [
   },
 ]
 
-export default function ProductGrid({ searchQuery }: { searchQuery: string }) {
+export default function ProductGrid() {
   return (
     <div className='mt-6'>
       {mockProducts.length === 0 ? (
