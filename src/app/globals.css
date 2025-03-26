@@ -1,1 +1,20 @@
 @import 'tailwindcss';
+
+.input {
+    @apply block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900  outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-slate-950 sm:text-sm/6
+}
+
+@keyframes fadeSlideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.false-slide-animate {
+    animation: fadeSlideDown 0.5s ease-in-out forwards;
+}

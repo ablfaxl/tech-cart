@@ -1,28 +1,28 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ProductCard from '@/app/(product)/card'
-import CategoryCard from '@/app/cmp/cat/card'
+import CategoryCard from '@/app/(product)/category/card'
 
 export default function Home() {
   return (
     <div className='min-h-screen bg-gray-50'>
       {/* Hero Section */}
-      <div className='bg-gradient-to-br from-indigo-50 to-purple-50 py-20 px-4'>
+      <div className='bg-gradient-to-br from-slate-50 to-purple-50 py-20 px-4'>
         <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center'>
           <div>
             <h1 className='text-4xl md:text-5xl font-bold text-gray-900 mb-4'>
-              Shop with confidence
+              خرید مطمئن
             </h1>
             <p className='text-gray-600 text-lg mb-8 max-w-lg'>
-              Discover our curated collection of premium products. Quality
-              materials, timeless designs, and exceptional craftsmanship.
+              مجموعه انتخاب شده ای از محصولات ممتاز را کشف کنید. کیفیت مواد، طرح
+              های بی انتها، و طرح های استثنایی.
             </p>
             <div className='flex flex-wrap gap-4'>
-              <button className='bg-indigo-600 text-white px-6 py-3 rounded-md font-medium hover:bg-indigo-700 transition-colors'>
-                Shop now
+              <button className='bg-slate-950 text-white px-6 py-3 rounded-md font-medium hover:bg-slate-800 transition-colors'>
+                الان خرید کن
               </button>
               <button className='text-gray-700 px-6 py-3 rounded-md font-medium border border-gray-300 hover:bg-gray-100 transition-colors'>
-                View collections
+                دیدن همه کالکشن ها
               </button>
             </div>
           </div>
@@ -41,13 +41,13 @@ export default function Home() {
       {/* Categories */}
       <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
         <h2 className='text-2xl font-bold text-gray-900 mb-8'>
-          Shop by Category
+          خرید بر اساس دسته بندی
         </h2>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-6'>
-          <CategoryCard image='/image/t-shirt-1.avif' name='Clothing' />
-          <CategoryCard image='/image/cup-black.avif' name='Accessories' />
-          <CategoryCard image='/image/t-shirt-1.avif' name='Footwear' />
-          <CategoryCard image='/image/cup-black.avif' name='Home Goods' />
+          <CategoryCard image='/image/t-shirt-1.avif' name='لباس' />
+          <CategoryCard image='/image/cup-black.avif' name='اکسسوری' />
+          <CategoryCard image='/image/t-shirt-1.avif' name='کفش' />
+          <CategoryCard image='/image/cup-black.avif' name='دکوری' />
         </div>
       </div>
 
@@ -55,39 +55,37 @@ export default function Home() {
       <div className='bg-white py-16'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='flex justify-between items-center mb-8'>
-            <h2 className='text-2xl font-bold text-gray-900'>
-              Featured Products
-            </h2>
+            <h2 className='text-2xl font-bold text-gray-900'>محصولات محبوب</h2>
             <Link
-              className='text-indigo-600 hover:text-indigo-800 font-medium'
+              className='text-slate-600 hover:text-slate-800 font-medium'
               href='#'
             >
-              View all →
+              دیدن همه ←{' '}
             </Link>
           </div>
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
             <ProductCard
               image='/image/cup-black.avif'
-              name='Premium Cotton T-Shirt'
+              name='تیشرت کتان'
               price={29.99}
               rating={4.5}
             />
             <ProductCard
               image='/image/t-shirt-1.avif'
-              name='Leather Crossbody Bag'
+              name='کیف چرمی (چرم تبریز)'
               price={89.99}
               rating={4.7}
             />
             <ProductCard
               image='/image/cup-black.avif'
-              name='Slim Fit Jeans'
+              name='شلوار مام استایل'
               price={59.99}
               rating={4.8}
             />
 
             <ProductCard
               image='/image/t-shirt-1.avif'
-              name='Minimalist Watch'
+              name='ساعت هوشمند اپل'
               price={129.99}
               rating={4.9}
             />
@@ -96,15 +94,16 @@ export default function Home() {
       </div>
 
       {/* Promotional Banner */}
-      <div className='bg-indigo-700 py-12'>
+      <div className='bg-slate-950 py-12'>
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='text-center'>
-            <h2 className='text-3xl font-bold text-white mb-4'>Summer Sale</h2>
+            <h2 className='text-3xl font-bold text-white mb-4'>فروش بهاره</h2>
             <p className='text-indigo-100 text-lg mb-6 max-w-2xl mx-auto'>
-              Enjoy up to 50% off on selected items. Limited time offer.
+              از تخفیف 50 درصدی بر روی اقلام انتخابی برخوردار شوید. پیشنهاد زمان
+              محدود
             </p>
-            <button className='bg-white text-indigo-700 px-6 py-3 rounded-md font-medium hover:bg-indigo-50 transition-colors'>
-              Shop the sale
+            <button className='bg-white text-slate-960 px-6 py-3 rounded-md font-medium hover:bg-slate-50 transition-colors'>
+              خرید
             </button>
           </div>
         </div>
@@ -113,40 +112,40 @@ export default function Home() {
       {/* New Arrivals */}
       <div className='max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center mb-8'>
-          <h2 className='text-2xl font-bold text-gray-900'>New Arrivals</h2>
+          <h2 className='text-2xl font-bold text-gray-900'>جدیدترین ها</h2>
           <Link
-            className='text-indigo-600 hover:text-indigo-800 font-medium'
-            href='#'
+            className='text-slate-950 hover:text-slate-800 font-medium'
+            href='/search'
           >
-            View all →
+            دیدن همه ←{' '}
           </Link>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6'>
           <ProductCard
             isNew
             image='/image/t-shirt-1.avif'
-            name='Oversized Sweater'
+            name='تیشرت بگ'
             price={79.99}
             rating={4.6}
           />
           <ProductCard
             isNew
             image='/image/t-shirt-1.avif'
-            name='Canvas Sneakers'
+            name='شلوار مام فیت'
             price={64.99}
             rating={4.3}
           />
           <ProductCard
             isNew
             image='/image/t-shirt-1.avif'
-            name='Wireless Earbuds'
+            name='ایرپاد بلوتوثی'
             price={119.99}
             rating={4.7}
           />
           <ProductCard
             isNew
             image='/image/t-shirt-1.avif'
-            name='Ceramic Mug Set'
+            name='ماگ طرح ace'
             price={34.99}
             rating={4.5}
           />
@@ -158,19 +157,20 @@ export default function Home() {
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='max-w-xl mx-auto text-center'>
             <h2 className='text-2xl font-bold text-gray-900 mb-4'>
-              Subscribe to our newsletter
+              در خبرنامه ما عضو شوید
             </h2>
             <p className='text-gray-600 mb-6'>
-              Get the latest updates on new products and upcoming sales.
+              آخرین به روز رسانی ها را در مورد محصولات جدید و فروش های آینده
+              دریافت کنید.
             </p>
             <div className='flex flex-col sm:flex-row gap-2'>
               <input
-                className='flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500'
-                placeholder='Enter your email'
+                className='flex-1 px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-slate-950'
+                placeholder='ایمیل خود را وارد کنید'
                 type='email'
               />
-              <button className='bg-indigo-600 text-white px-6 py-3 rounded-md font-medium hover:bg-indigo-700 transition-colors'>
-                Subscribe
+              <button className='bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-slate-950  transition-colors'>
+                عضویت
               </button>
             </div>
           </div>
@@ -231,41 +231,41 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <h3 className='text-lg font-bold mb-4'>Shop</h3>
+              <h3 className='text-lg font-bold mb-4'>فروشگاه</h3>
               <ul className='space-y-2'>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    All Products
+                    همه محصولات
                   </Link>
                 </li>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    New Arrivals
+                    جدیدترین ها
                   </Link>
                 </li>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    Best Sellers
+                    محبوب ترین ها
                   </Link>
                 </li>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    Sale
+                    پر فروش ترین ها
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className='text-lg font-bold mb-4'>Customer Service</h3>
+              <h3 className='text-lg font-bold mb-4'>خدمات</h3>
               <ul className='space-y-2'>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    Contact Us
+                    تماس با ما
                   </Link>
                 </li>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    Shipping & Returns
+                    حمل و نقل و برگشت
                   </Link>
                 </li>
                 <li>
@@ -275,17 +275,17 @@ export default function Home() {
                 </li>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    Size Guide
+                    راهنمای سایز
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className='text-lg font-bold mb-4'>About</h3>
+              <h3 className='text-lg font-bold mb-4'>تک کارت | Tech Cart</h3>
               <ul className='space-y-2'>
                 <li>
                   <Link className='text-gray-400 hover:text-white' href='#'>
-                    Our Story
+                    داستان ما
                   </Link>
                 </li>
                 <li>

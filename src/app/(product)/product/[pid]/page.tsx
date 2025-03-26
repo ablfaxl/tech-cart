@@ -4,7 +4,7 @@ import { Radio, RadioGroup } from '@headlessui/react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import { useState } from 'react'
-import { pId } from '@/data/products'
+import { pId } from '@/constants/products'
 
 const reviews = { href: '#', average: 4, totalCount: 117 }
 
@@ -27,15 +27,15 @@ export default function SinglepId() {
             {pId.breadcrumbs.map(breadcrumb => (
               <li key={breadcrumb.id}>
                 <div className='flex items-center'>
-                  <a
+                  <Link
                     className='mr-2 text-sm font-medium text-gray-900'
                     href={breadcrumb.href}
                   >
                     {breadcrumb.name}
-                  </a>
+                  </Link>
                   <svg
                     aria-hidden='true'
-                    className='h-5 w-4 text-gray-300'
+                    className='h-5 w-4 text-gray-300 -rotate-x-180'
                     fill='currentColor'
                     height={20}
                     viewBox='0 0 16 20'
@@ -99,7 +99,7 @@ export default function SinglepId() {
 
             {/* Reviews */}
             <div className='mt-6'>
-              <h3 className='sr-only'>Reviews</h3>
+              <h3 className='sr-only'>نظرات</h3>
               <div className='flex items-center'>
                 <div className='flex items-center'>
                   {[0, 1, 2, 3, 4].map(rating => (
@@ -115,12 +115,12 @@ export default function SinglepId() {
                     />
                   ))}
                 </div>
-                <p className='sr-only'>{reviews.average} out of 5 stars</p>
+                <p className='sr-only'>{reviews.average} </p>
                 <a
-                  className='ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500'
+                  className='ml-3 text-sm font-medium text-slate-950 hover:text-slate-800'
                   href={reviews.href}
                 >
-                  {reviews.totalCount} reviews
+                  {reviews.totalCount} نظر
                 </a>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function SinglepId() {
             <form className='mt-10'>
               {/* Colors */}
               <div>
-                <h3 className='text-sm font-medium text-gray-900'>Color</h3>
+                <h3 className='text-sm font-medium text-gray-900'>رنگ</h3>
 
                 <fieldset aria-label='Choose a color' className='mt-4'>
                   <RadioGroup
@@ -164,10 +164,10 @@ export default function SinglepId() {
                 <div className='flex items-center justify-between'>
                   <h3 className='text-sm font-medium text-gray-900'>Size</h3>
                   <a
-                    className='text-sm font-medium text-indigo-600 hover:text-indigo-500'
+                    className='text-sm font-medium text-slate-600 hover:text-slate-500'
                     href='#'
                   >
-                    Size guide
+                    راهنمای سایز
                   </a>
                 </div>
 
@@ -183,7 +183,7 @@ export default function SinglepId() {
                           size.inStock
                             ? 'cursor-pointer bg-white text-gray-900 shadow-sm'
                             : 'cursor-not-allowed bg-gray-50 text-gray-200',
-                          'group relative flex items-center justify-center rounded-md border px-4 py-3 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none data-[focus]:ring-2 data-[focus]:ring-indigo-500 sm:flex-1 sm:py-6'
+                          'group relative flex items-center justify-center rounded-md border px-4 py-3 text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none data-[focus]:ring-2 data-[focus]:ring-slate-500 sm:flex-1 sm:py-6'
                         )}
                         disabled={!size.inStock}
                         key={size.name}
@@ -193,7 +193,7 @@ export default function SinglepId() {
                         {size.inStock ? (
                           <span
                             aria-hidden='true'
-                            className='pointer-events-none absolute -inset-px rounded-md border-2 border-transparent group-data-[focus]:border group-data-[checked]:border-indigo-500'
+                            className='pointer-events-none absolute -inset-px rounded-md border-2 border-transparent group-data-[focus]:border group-data-[checked]:border-slate-500'
                           />
                         ) : (
                           <span
@@ -223,10 +223,10 @@ export default function SinglepId() {
               </div>
 
               <button
-                className='mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                className='mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-slate-950 duration-300 px-8 py-3 text-base font-medium text-white hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                 type='submit'
               >
-                Add to bag
+                اضافه کردن به سبد خرید
               </button>
             </form>
           </div>
@@ -242,7 +242,7 @@ export default function SinglepId() {
             </div>
 
             <div className='mt-10'>
-              <h3 className='text-sm font-medium text-gray-900'>Highlights</h3>
+              <h3 className='text-sm font-medium text-gray-900'>مشخصات</h3>
 
               <div className='mt-4'>
                 <ul className='list-disc space-y-2 pl-4 text-sm' role='list'>
@@ -256,7 +256,7 @@ export default function SinglepId() {
             </div>
 
             <div className='mt-10'>
-              <h2 className='text-sm font-medium text-gray-900'>Details</h2>
+              <h2 className='text-sm font-medium text-gray-900'>جزئیات</h2>
 
               <div className='mt-4 space-y-6'>
                 <p className='text-sm text-gray-600'>{pId.details}</p>

@@ -2,10 +2,10 @@ export const navigation = {
   categories: [
     {
       id: 'men',
-      name: 'Men',
+      name: 'مردانه',
       featured: [
         {
-          name: 'New Arrivals',
+          name: 'جدیدترین ها',
           href: '/product/1',
           imageSrc:
             'https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
@@ -13,7 +13,7 @@ export const navigation = {
             'Drawstring top with elastic loop closure and textured interior padding.',
         },
         {
-          name: 'Artwork Tees',
+          name: 'کلاسیک',
           href: '/product/1',
           imageSrc:
             'https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg',
@@ -24,32 +24,31 @@ export const navigation = {
       sections: [
         {
           id: 'clothing',
-          name: 'Clothing',
+          name: 'لباس مردانه',
           items: [
-            { name: 'Tops', href: '/product/1' },
-            { name: 'Pants', href: '/product/1' },
-            { name: 'Sweaters', href: '/product/1' },
-            { name: 'T-Shirts', href: '/product/1' },
-            { name: 'Jackets', href: '/product/1' },
-            { name: 'Activewear', href: '/product/1' },
-            { name: 'Browse All', href: '/product/1' },
+            { name: 'تیشرت', href: '/product/1' },
+            { name: 'شلوار', href: '/product/1' },
+            { name: 'کت و شلوار', href: '/product/1' },
+            { name: 'جاکت', href: '/product/1' },
+            { name: 'کاپشن', href: '/product/1' },
+            { name: 'دیدن همه', href: '/search' },
           ],
         },
         {
           id: 'accessories',
-          name: 'Accessories',
+          name: 'اکسسوری',
           items: [
-            { name: 'Watches', href: '/product/1' },
-            { name: 'Wallets', href: '/product/1' },
-            { name: 'Bags', href: '/product/1' },
-            { name: 'Sunglasses', href: '/product/1' },
-            { name: 'Hats', href: '/product/1' },
-            { name: 'Belts', href: '/product/1' },
+            { name: 'ساعت', href: '/product/1' },
+            { name: 'کیف پول', href: '/product/1' },
+            { name: 'کوله پشتی', href: '/product/1' },
+            { name: 'عینک آفتابی', href: '/product/1' },
+            { name: 'کلاه', href: '/product/1' },
+            { name: 'کمربند', href: '/product/1' },
           ],
         },
         {
           id: 'brands',
-          name: 'Brands',
+          name: 'برند ها',
           items: [
             { name: 'Re-Arranged', href: '/product/1' },
             { name: 'Counterfeit', href: '/product/1' },
@@ -61,10 +60,10 @@ export const navigation = {
     },
     {
       id: 'women',
-      name: 'Women',
+      name: 'زنانه',
       featured: [
         {
-          name: 'New Arrivals',
+          name: 'جدیدترین ها',
           href: '/product/1',
           imageSrc:
             'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg',
@@ -72,7 +71,7 @@ export const navigation = {
             'Models sitting back to back, wearing Basic Tee in black and bone.',
         },
         {
-          name: 'Basic Tees',
+          name: 'محبوب ترین ها',
           href: '/',
           imageSrc:
             'https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg',
@@ -83,34 +82,32 @@ export const navigation = {
       sections: [
         {
           id: 'clothing',
-          name: 'Clothing',
+          name: 'لباس زنانه',
           items: [
-            { name: 'Tops', href: '/product/1' },
-            { name: 'Dresses', href: '/product/1' },
-            { name: 'Pants', href: '/product/1' },
-            { name: 'Denim', href: '/product/1' },
-            { name: 'Sweaters', href: '/product/1' },
-            { name: 'T-Shirts', href: '/product/1' },
-            { name: 'Jackets', href: '/product/1' },
-            { name: 'Activewear', href: '/product/1' },
-            { name: 'Browse All', href: '/product/1' },
+            { name: 'پیراهن', href: '/product/1' },
+            { name: 'بلوز و شلوار', href: '/product/1' },
+            { name: 'شلوار', href: '/product/1' },
+            { name: 'دامن', href: '/product/1' },
+            { name: 'جاکت', href: '/product/1' },
+            { name: 'تیشرت', href: '/product/1' },
+            { name: 'دیدن همه', href: '/product/' },
           ],
         },
         {
           id: 'accessories',
-          name: 'Accessories',
+          name: 'اکسسوری',
           items: [
-            { name: 'Watches', href: '/product/1' },
-            { name: 'Wallets', href: '/product/1' },
-            { name: 'Bags', href: '/product/1' },
-            { name: 'Sunglasses', href: '/product/1' },
-            { name: 'Hats', href: '/product/1' },
-            { name: 'Belts', href: '/product/1' },
+            { name: 'ساعت', href: '/product/1' },
+            { name: 'کیف پول', href: '/product/1' },
+            { name: 'کوله پشتی', href: '/product/1' },
+            { name: 'عینک آفتابی', href: '/product/1' },
+            { name: 'کلاه', href: '/product/1' },
+            { name: 'کمربند', href: '/product/1' },
           ],
         },
         {
           id: 'brands',
-          name: 'Brands',
+          name: 'برند ها',
           items: [
             { name: 'Full Nelson', href: '/product/1' },
             { name: 'My Way', href: '/product/1' },
@@ -122,5 +119,5 @@ export const navigation = {
       ],
     },
   ],
-  pages: [{ name: 'Stores', href: '/product/1' }],
+  pages: [{ name: 'جستجو', href: '/search' }],
 }

@@ -9,10 +9,10 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import Logo from '@/app/cmp/logo'
+import CartModal from '@/app/cmp/modal/cart'
+import DialogCmp from '@/app/cmp/modal/dialog'
 import { Banner } from '@/app/cmp/nav/banner'
 import Flayout from '@/app/cmp/nav/flyout'
-import CartModal from '@/app/modal/cart'
-import DialogCmp from '@/app/modal/dialog'
 
 export default function Nav() {
   const pathname = usePathname()
@@ -22,6 +22,7 @@ export default function Nav() {
   if (pathname === '/signin' || pathname === '/signup') {
     return null
   }
+
   return (
     <>
       <div className='bg-white'>
@@ -54,14 +55,14 @@ export default function Nav() {
                       className='text-sm font-medium text-gray-700 hover:text-gray-800'
                       href='/signin'
                     >
-                      Sign in
+                      ورود
                     </Link>
                     <span aria-hidden='true' className='h-6 w-px bg-gray-200' />
                     <Link
                       className='text-sm font-medium text-gray-700 hover:text-gray-800'
                       href='/signup'
                     >
-                      Create account
+                      ساخت حساب
                     </Link>
                   </div>
 
@@ -71,7 +72,7 @@ export default function Nav() {
                       className='p-2 text-gray-400 hover:text-gray-500'
                       href='#'
                     >
-                      <span className='sr-only'>Search</span>
+                      <span className='sr-only'>جستجو</span>
                       <MagnifyingGlassIcon
                         aria-hidden='true'
                         className='size-6'
@@ -90,7 +91,7 @@ export default function Nav() {
                       <span className='ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800'>
                         2
                       </span>
-                      <span className='sr-only'>items in cart, view bag</span>
+                      <span className='sr-only'>سبد خرید</span>
                     </div>
                   </div>
                 </div>

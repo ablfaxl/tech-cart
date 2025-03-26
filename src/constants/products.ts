@@ -27,12 +27,12 @@ export const products = [
 ]
 
 export const pId = {
-  name: 'Basic Tee 6-Pack',
+  name: 'تیشرت مردانه ساده',
   price: '$192',
   href: '#',
   breadcrumbs: [
-    { id: 1, name: 'Men', href: '#' },
-    { id: 2, name: 'Clothing', href: '#' },
+    { id: 1, name: 'مردانه', href: '#' },
+    { id: 2, name: 'تیشرت', href: '#' },
   ],
   images: [
     {
@@ -69,13 +69,13 @@ export const pId = {
     { name: '3XL', inStock: true },
   ],
   description:
-    'The Basic Tee 6-Pack allows you to fully express your vibrant personality with three grayscale options. Feeling adventurous? Put on a heather gray tee. Want to be a trendsetter? Try our exclusive colorway: "Black". Need to add an extra pop of color to your outfit? Our white tee has you covered.',
+    'بسته پایه 6 تی به شما این امکان را می دهد تا شخصیت پر جنب و جوش خود را با سه گزینه در مقیاس خاکستری به طور کامل بیان کنید. احساس ماجراجویی می کنید؟ سه راهی خاکستری هدری بپوشید. آیا می خواهید یک ترندسند باشید؟ رنگ منحصر به فرد ما را امتحان کنید: "مشکی". آیا نیاز به اضافه کردن رنگ اضافی به لباس خود دارید؟ تی سفید ما شما را پوشانده است.',
   highlights: [
-    'Hand cut and sewn locally',
-    'Dyed with our proprietary colors',
-    'Pre-washed & pre-shrunk',
-    'Ultra-soft 100% cotton',
+    'دست برش و دوخت محلی',
+    'رنگ شده با رنگ های اختصاصی ما',
+    'پیش شسته شده و از قبل کوچک شده',
+    'بسیار نرم 100٪ پنبه',
   ],
   details:
-    'The 6-Pack includes two black, two white, and two heather gray Basic Tees. Sign up for our subscription service and be the first to get new, exciting colors, like our upcoming "Charcoal Gray" limited release.',
+    'بسته 6 شامل دو تی بیسیک مشکی، دو سفید و دو هدری خاکستری است. برای سرویس اشتراک ما ثبت‌نام کنید و اولین نفری باشید که رنگ‌های جدید و هیجان‌انگیزی را دریافت می‌کنید، مانند نسخه محدود آینده ما "خاکستری ذغالی".',
 }
